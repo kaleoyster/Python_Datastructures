@@ -4,5 +4,5 @@ def checkPalin(string):
      return string  == string[::-1]
 
 if __name__ == "__main__":
-    string = "abbba"
+    string = input("Enter string: ")
     print(checkPalin(string))
