@@ -22,12 +22,13 @@ def cleaned(string):
     #string = string.split('')
     string = sorted(string)
     string = "".join(string)
-    print(string)
+
     return string
 
 if __name__=="__main__":
-   string = "rail! safety!"
-   string1 = "fairy tales"
-   
+   #string = "rail! safety!"
+   #string1 = "fairy tales"
+   string = input("Enter first string: ")
+   string1 = input("Enter second string: ")
    print(anagram(string,string1))
 
