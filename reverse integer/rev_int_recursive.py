@@ -1,5 +1,5 @@
 ## Python Program to reverse an integer
-## using recursion
+## using recursion ## Doesnt work properly need fix
 
 
 def rev_int(string):
@@ -7,8 +7,9 @@ def rev_int(string):
     n = 0
     if l[0] == '-':
        n = 1
-       l = l[1:]
-    l = l[::-1]
+       l = l[1:]   
+    l = reverse(l)
+    l = list(l)
     ri = "".join(l)
     if n == 1:
        ri = 0 - int(ri)
@@ -22,3 +23,4 @@ def reverse(int_list):
 if __name__ == "__main__":
     integer = input("enter an integer: ")
     print(rev_int(integer))
+    #print(reverse(integer))
