@@ -16,7 +16,7 @@ def reverse(string):
         elif not isAlphabet(LIST[r]):
             r -= 1
         else: 
-            LIST[l], LIST[r] = swap(LIST[l], LIST[r])
+            LIST[l], LIST[r] = LIST[l], LIST[r]
             l += 1
             r -= 1
 
@@ -27,9 +27,6 @@ def toList(string):
 
 def toString(List):
     return ''.join(List)
-
-def swap(a,b):
-    return b, a
 
 
 string = 'a!!!b.c.d,ef,ghi'
