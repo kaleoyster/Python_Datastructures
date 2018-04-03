@@ -12,9 +12,9 @@ def bsearch(arr,l,r,s):
     else:
         return -1
 
-if __name__="__main__":
+if __name__=="__main__":
     arr = [2,2,3,4,5,6,10,40]
-    s = 10
+    s = 40
     result = bsearch(arr,0,len(arr)-1,s)
     if result != 1:
         print(result)
