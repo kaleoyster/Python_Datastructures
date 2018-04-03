@@ -3,7 +3,7 @@ from collections import defaultdict
 class Graph:
     def __init__(self,vertices):
        self.V = vertices
-       self.graph = defaultdict(list)
+       self.Graph = defaultdict(list)
 
 
     def addEdge(self,u,v):
@@ -41,5 +41,5 @@ g.addEdge(2,0)
 
 if g.isCyclic():
     print("Graph contains cycle")
-else: 
-    print("Graph does not contain Cycle")      
+else:
+    print("Graph does not contain Cycle")
