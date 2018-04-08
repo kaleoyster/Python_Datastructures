@@ -6,24 +6,25 @@ class Node:
 
 
 
-
 def printlevelorder(node):
     if node is None:
-       return 
-         
-       queue = []
+        return
+    else:
+        queue = []
+        queue.append(node)
+        length_que = len(queue)
+        while length_que >= 1:
 
-       queue.append(node)
-        
-       while(len(queue) > 0):
             print(queue[0].data)
             node = queue.pop(0)
-            
+
             if node.left is not None:
-               queue.append(node.left)
-             
+                 queue.append(node.left)
+
             if node.right is not None:
-               queue.append(node.right)
+                 queue.append(node.right)
+
+
 
 root = Node(1)
 root.left = Node(2)
@@ -33,9 +34,3 @@ root.right.right = Node(5)
 
 print("Level order traversal of binary tree ")
 printlevelorder(root)
-
-
-
-
-
- 
