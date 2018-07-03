@@ -2,6 +2,7 @@ from collections import defaultdict
 
 class Graph:
     def __init__(self,vertices):
+        """ Constructor of Graphs that includes vertices"""
        self.V = vertices
        self.Graph = defaultdict(list)
 
