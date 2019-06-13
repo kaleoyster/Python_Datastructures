@@ -1,3 +1,5 @@
+# A Python implementation of Linked List
+# Author: Akshay Kale
 
 class Node:
     def __init__(self,val):

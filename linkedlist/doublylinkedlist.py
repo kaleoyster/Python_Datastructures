@@ -11,6 +11,12 @@ class DoublyNode:
         while node != None:
             print(node.val)
             node = node.next
+
+    def traverse_back(self):
+        node = self
+        while node != None:
+            print(node.val)
+            node = node.prev
 '''
 def main():
     n = input("Enter the Length of Linked list: ")
